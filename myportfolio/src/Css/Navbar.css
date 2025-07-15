@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.blue-square {
+  width: 12px;
+  height: 12px;
+  background-color: #0050ff;
+  margin-right: 10px;
+}
+
+.namea {
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.divider {
+  margin: 0 10px;
+  color: #888;
+}
+
+.titles {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.90rem;
+  transition: color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-right a.active {
+  color: #0050ff;
+}
+
+.navbar-right a:hover {
+  color: #0050ff;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #eee;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  .navbar-right.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

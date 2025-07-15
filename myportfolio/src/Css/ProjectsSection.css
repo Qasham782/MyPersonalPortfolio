@@ -1,0 +1,99 @@
+/* ---- Section wrapper ---- */
+.projects-wrapper {
+  background: silver;           
+  padding: 4rem 1.5rem 6rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* ---- Heading ---- */
+.projects-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+.blue-square {
+  width: 16px;
+  height: 16px;
+  background: #0050ff;
+}
+.projects-heading h2 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+/* ---- Intro paragraph ---- */
+.projects-intro {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* ---- Project card ---- */
+.project-card {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.486);
+  background: #f9f9f9;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* left column */
+.project-card-left {
+  display: flex;
+  flex: 1 1 55%;
+}
+.accent-bar {
+  width: 10px;
+  background: #0050ff;
+}
+.project-content {
+  padding: 2.5rem 2rem;
+  text-align: left;
+}
+.project-name {
+  color: #0050ff;
+  font-size: 1.4rem;
+  margin: 0 0 0.25rem;
+}
+.role-title {
+  font-weight: 600;
+  margin: 0 0 1.5rem;
+}
+.project-desc {
+  line-height: 1.8;
+  max-width: 400px;
+}
+
+/* right column */
+.project-card-right {
+  flex: 1 1 45%;
+  min-height: 350px;
+}
+.project-card-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- Responsive tweaks ---- */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .project-card-right {
+    min-height: 260px;
+  }
+  .project-content {
+    padding: 2rem 1.5rem;
+  }
+  .project-desc {
+    max-width: 100%;
+  }
+}

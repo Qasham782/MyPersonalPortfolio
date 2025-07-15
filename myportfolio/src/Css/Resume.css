@@ -1,0 +1,312 @@
+/* Root wrapper */
+.resume-wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+  color: #222;
+}
+@media (max-width: 800px) {
+  .resume-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === LEFT COLUMN ===================================== */
+.left-col {
+  background: #fff;
+  padding: 1.8rem 1.2rem 3rem;
+  position: relative;
+  box-shadow: 0 0 0 1px #ddd;
+}
+.top-bar,
+.bottom-bar {
+  height: 8px;
+  background: #3d7aff;
+  margin: 0 -1.2rem 1.8rem;
+}
+.blue-circle.side {
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: #3d7aff;
+  border-radius: 50%;
+}
+.avatar-wrapper {
+  border: 4px solid #ddd;
+  padding: 4px;
+  margin-bottom: 2rem;
+}
+.avatar-wrapper img {
+  width: 100%;
+  display: block;
+}
+.section-title {
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+  color: #3d7aff;
+  margin: 1.8rem 0 0.6rem;
+}
+.skill {
+  margin-bottom: 0.8rem;
+}
+.skill span {
+  font-size: 0.8rem;
+  display: block;
+}
+.bar-bg {
+  background: #e5eefa;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bar-fill {
+  background: #3d7aff;
+  height: 100%;
+}
+
+/* === RIGHT COLUMN ==================================== */
+.right-col {
+  padding: 2rem 2.5rem 3.5rem;
+  position: relative;
+}
+.role-badge {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #3d7aff;
+  margin-bottom: 1rem;
+}
+.blue-circle.top-right {
+  position: absolute;
+  right: 2.5rem;
+  top: 2rem;
+  width: 32px;
+  height: 32px;
+  background: #3d7aff;
+  border-radius: 50%;
+}
+.names {
+  color: #3d7aff;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin: 0 0 2rem;
+}
+.project {
+  margin-bottom: 1rem;
+}
+.attrs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.attrs li::before {
+  content: "•";
+  color: #3d7aff;
+  margin-right: 0.4rem;
+}
+.final-info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.final-info h4 {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+.bottom-bar {
+  height: 8px;
+  background: #3d7aff;
+  margin-top: 2.5rem;
+}
+
+.download-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.download-btn.styled {
+  background-color: #3d7aff;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.download-btn.styled:hover {
+  background-color: #295ee6;
+}
+
+
+/* Responsive mobile view */
+@media (max-width: 768px) {
+  .resume-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .left-col,
+  .right-col {
+    text-align: center;
+    padding: 1rem 1.5rem;
+  }
+  .avatar-wrapper img {
+    margin: 0 auto;
+  }
+  .blue-circle.top-right,
+  .blue-circle.side {
+    display: none;
+  }
+  .final-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .name {
+    font-size: 2rem;
+  }
+}
+
+.left-col {
+  background: #fff;
+  padding: 2rem 1.2rem;
+  position: relative;
+  box-shadow: 0 0 0 1px #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.top-bar,
+.bottom-bar {
+  height: 8px;
+  background: #3d7aff;
+  margin: 0 -1.2rem 1.5rem;
+}
+
+.avatar-wrapper {
+  border: 4px solid #ddd;
+  padding: 4px;
+  text-align: center;
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 8px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #3d7aff;
+  margin-bottom: 0.5rem;
+}
+
+.skill {
+  margin-bottom: 0.8rem;
+}
+
+.skill span {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.bar-bg {
+  background: #e5eefa;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background: #3d7aff;
+  height: 100%;
+}
+
+.right-col {
+  padding: 2rem 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.role-badge {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #3d7aff;
+  margin-bottom: 0.5rem;
+}
+
+.blue-circle.top-right {
+  position: absolute;
+  right: 2.5rem;
+  top: 2rem;
+  width: 32px;
+  height: 32px;
+  background: #3d7aff;
+  border-radius: 50%;
+}
+
+.name {
+  color: #3d7aff;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.project {
+  margin-bottom: 1rem;
+}
+
+.attrs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.attrs li::before {
+  content: "•";
+  color: #3d7aff;
+  margin-right: 0.4rem;
+}
+
+.final-info {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.final-info h4 {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+
+.final-info a {
+  color: #3d7aff;
+  text-decoration: none;
+}
+
+.blue-circle.side {
+  position: absolute;
+  left: -16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: #3d7aff;
+  border-radius: 50%;
+}
