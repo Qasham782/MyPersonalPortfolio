@@ -1,148 +1,65 @@
 import React from "react";
-import "../Css/Resume.css";
-import avatar from "../assets/profile.jpg";
+import "../Css/Resume.css"; // Update this to match the new design
 
 const Resume = () => {
-  const skills = [
-    { name: "ReactJS", level: 90 },
-    { name: "Node.js / Express.js", level: 80 },
-    { name: "MongoDB", level: 70 },
-    { name: "HTML/CSS", level: 85 },
-  ];
-
-  const projects = [
-    {
-      title: "🎮 Movie Booking App",
-      desc:
-        "A web app for browsing, selecting, and booking movie tickets with showtime filtering and pricing.",
-    },
-    {
-      title: "🌡️ Climate Prediction Dashboard (with ML Model)",
-      desc:
-        "Integrated a Python ML model using Flask backend and displayed real-time predictions with charts in React frontend.",
-    },
-    {
-      title: "📄 Portfolio Website",
-      desc:
-        "Personal portfolio site built with React showcasing projects, resume, and contact form using EmailJS.",
-    },
-  ];
-
   return (
-    <>
-      <div className="resume-wrapper" id="resume">
-        <aside className="left-col">
-          <div className="top-bar" />
-          <figure className="avatar-wrapper">
-            <img src={avatar} alt="Qasham Ahmed" />
-          </figure>
+    <div className="resume-container">
+      <header className="resume-header">
+        <div>
+          <h1 className="name">QASHAM AHMED</h1>
+        </div>
+        <div className="contact">
+          <p>Karachi, Sindh | Pakistan</p>
+          <p>0325-2997781 | <a href="mailto:qashamahmed210@gmail.com">qashamahmed210@gmail.com</a></p>
+        </div>
+        <p className="summary">
+          Aspiring full stack developer with strong skills in the MERN stack and hands-on experience through various academic and personal projects. Seeking an opportunity to contribute to dynamic development teams while continuously learning and growing in modern web development tech.
+        </p>
+      </header>
 
-          <section>
-            <h3 className="section-title">Contact</h3>
-            <address>
-              Karachi, Sindh<br />
-              qashamaptech@gmail.com<br />
-              03252997781<br />
-              Nazimabad no 2
-            </address>
-          </section>
+      <main className="resume-main">
+        <section className="section">
+          <h3 className="section-title">EXPERIENCE</h3>
+          <h4>COLLEGE PROJECT CONTRIBUTOR</h4>
+          <p><strong>Aptech Institute | Karachi | 2022 – 2023</strong></p>
+          <p>
+            Collaborated with classmates on academic projects involving full-stack features and real-time data.
+            Key roles included backend API creation (Express.js), database design (MongoDB), and frontend layout (React.js).
+            Projects covered domains like movie booking, climate dashboards, and inventory management.
+          </p>
+        </section>
 
-          <section>
-            <h3 className="section-title">Education</h3>
-            <p>
-              <strong>Diploma in Software Engineering</strong><br /><br />
-              Aptech, Karachi — 3-year program<br />
-              Completed: 2025
-            </p>
-            <p>
-              <strong>Matriculation (Secondary School Certificate)</strong><br /><br />
-              Completed: 2021
-            </p>
-          </section>
+        <section className="section">
+          <h3 className="section-title">EDUCATION</h3>
+          <p><strong>Diploma in Software Engineering</strong><br />
+            Aptech, Karachi — 3-Year Program<br />
+            <em>Completed: 2025</em>
+          </p>
+          <p><strong>Matriculation (Secondary School Certificate)</strong><br />
+            <em>Completed: 2021</em>
+          </p>
+        </section>
 
-          <section>
-            <h3 className="section-title">Skills</h3>
-            {skills.map((s) => (
-              <div className="skill" key={s.name}>
-                <span>{s.name}</span>
-                <div className="bar-bg">
-                  <div className="bar-fill" style={{ width: `${s.level}%` }} />
-                </div>
-              </div>
-            ))}
-          </section>
+        <section className="section">
+          <h3 className="section-title">SKILLS</h3>
+          <ul className="skills-list">
+            <li><strong>Frontend:</strong> React.js, HTML5, CSS3, JavaScript, Bootstrap</li>
+            <li><strong>Backend:</strong> Node.js, Express.js, MongoDB</li>
+            <li><strong>MERN Stack:</strong> MongoDB, Express.js, React.js, Node.js</li>
+            <li><strong>Tools:</strong> Git & GitHub, Visual Studio Code, Firebase, Postman, Netlify</li>
+            <li><strong>Language:</strong> Urdu, English</li>
+            <li><strong>Soft Skills:</strong> Problem-solving, Agile Collaboration, UI/UX Awareness, Debugging, Team Communication</li>
+          </ul>
+        </section>
 
-          <div className="blue-circle side" />
-        </aside>
-
-        <main className="right-col">
-          <span className="role-badge">Full Stack Developer</span>
-          <div className="blue-circle top-right" />
-
-          <h1 className="names">
-            Qasham Ahmed
-          </h1>
-
-          <section>
-            <h3 className="section-title">Objective</h3>
-            <p>
-              Aspiring full stack developer with strong skills in the MERN stack
-              and hands-on experience through various academic and personal
-              projects. Seeking an opportunity to contribute to dynamic
-              development teams while continuously learning and growing in modern
-              web development technologies.
-            </p>
-          </section>
-
-          <section>
-            <h3 className="section-title">Projects</h3>
-            {projects.map((p) => (
-              <div className="project" key={p.title}>
-                <strong>{p.title}</strong>
-                <p>{p.desc}</p>
-              </div>
-            ))}
-          </section>
-
-          <section>
-            <h3 className="section-title">Personal Attributes</h3>
-            <ul className="attrs">
-              <li>Passionate about clean code and UI/UX</li>
-              <li>Quick learner and self-starter</li>
-              <li>Strong problem-solving and debugging skills</li>
-              <li>Effective communicator and team player</li>
-            </ul>
-          </section>
-
-          <section className="final-info">
-            <div>
-              <h4>Languages</h4>
-              English: Intermediate<br />
-              Urdu: Native
-            </div>
-            <div>
-              <h4>GitHub</h4>
-              <a href="https://github.com/Qasham782" target="_blank" rel="noopener noreferrer">
-                github.com/Qasham782
-              </a>
-            </div>
-          </section>
-
-          <div className="bottom-bar" />
-
-          {/* Styled download button at the end */}
-          <div className="download-wrapper">
-            <a
-              href="/assets/QashamResume.pdf"
-              download="Qasham_Ahmed_Resume.pdf"
-              className="download-btn styled"
-            >
-              📄 Download Resume as PDF
-            </a>
-          </div>
-        </main>
-      </div>
-    </>
+        <section className="section">
+          <h3 className="section-title">GitHub</h3>
+          <a href="https://github.com/Qasham782" target="_blank" rel="noopener noreferrer">
+            https://github.com/Qasham782
+          </a>
+        </section>
+      </main>
+    </div>
   );
 };
 

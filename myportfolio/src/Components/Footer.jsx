@@ -24,8 +24,8 @@ const Footer = () => {
             <br /> 0325-299-7781
           </div>
           <div>
-            <strong>Write</strong>
-            <br /> qashamaptech@gmail.com
+            <strong>Gmail</strong>
+            <br /> qashamahmed210@gmail.com
           </div>
           <div>
             <strong>Follow</strong>

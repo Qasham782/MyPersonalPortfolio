@@ -17,10 +17,10 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      name: "EarthScape Climate Agency",
-      role: "Flask & Python",
+      name: "Login/Signup System",
+      role: "MERN Stack",
       description:
-        "A Flask and Python-based climate prediction web app powered by a machine learning model to forecast temperature trends. It offers interactive visualizations and a simple interface for analyzing past and future climate patterns.",
+        "A secure login/signup system built with the MERN stack, allowing users to register, log in, and manage their profiles. Features include JWT authentication, password hashing, and a user-friendly interface for seamless access.",
       image: project02,
     },
     {
